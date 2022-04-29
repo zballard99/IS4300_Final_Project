@@ -27,8 +27,9 @@ if(!require(ggthemes)) install.packages("ggthemes",repos =
 # Get the Default Data from GitHub
 ##put my github URL for this
 # This is the URL for the data that will be analyzed.
-urlfile <- "https://github.com/zballard99/IS4300_Final_Project/blob/main/Default.csv"
-# Read the data into R and name it cricketers.
+urlfile <- "https://raw.githubusercontent.com/zballard99/IS4300_Final_Project/main/Default.csv"
+#urlfile <- "https://github.com/zballard99/IS4300_Final_Project/blob/main/Default.csv"
+# Read the data into R and name it default_data
 default_data <- read_csv(url(urlfile))
 #default_data <- read_csv(file = 'default.csv') #Will comment out when url inserted
 
